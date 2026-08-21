@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3.5rem;
+  padding: 1.rem 3.5rem;
   z-index: 30;
   position: relative;
   background: linear-gradient(to bottom, rgba(18, 5, 0, 0.9), rgba(18, 5, 0, 0.4));
@@ -274,7 +274,7 @@
 /* Mobile Responsive */
 @media (max-width: 600px) {
   .landing-navbar {
-    padding: 1rem 1.2rem;
+    padding: 0.6rem 1.2rem;
   }
 
   .dsb-logo img {
@@ -285,12 +285,15 @@
     font-size: 0.85rem;
   }
 
+  .landing-hero {
+    margin-top: 1.5rem;
+  }
   .swing-wrapper {
     width: 95vw;
   }
 
   .swing-inner-content {
-    top: 1%;
+    top: 1.5%;
     width: 68%;
   }
 
