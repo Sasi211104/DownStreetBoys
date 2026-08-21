@@ -41,18 +41,18 @@
   background: rgba(220, 38, 38, 0.1);
 }
 
-/* Enhanced Navbar */
+/* Navbar with a lighter, more distinct background shade */
 .landing-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.rem 3.5rem;
+  padding: 0.8rem 3.5rem;
   z-index: 30;
   position: relative;
-  background: linear-gradient(to bottom, rgba(18, 5, 0, 0.9), rgba(18, 5, 0, 0.4));
+  background: rgba(70, 30, 10, 0.9); /* Lighter and warmer brownish tint */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(230, 177, 92, 0.25);
+  border-bottom: none; /* No dividing line */
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 .dsb-brand {
