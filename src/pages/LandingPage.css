@@ -168,7 +168,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: 20; /* Higher than swing so it's locked completely still */
+  z-index: 20;
 }
 
 .welcome-tag {
@@ -318,16 +318,29 @@
 
   .swing-inner-content {
     top: 5%;
-    width: 68%;
+    width: 70%;
+  }
+
+  /* Smaller text optimized for mobile screens */
+  .welcome-tag {
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
   }
 
   .hero-title {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  .festival-location {
+    font-size: 0.55rem;
+    letter-spacing: 1.2px;
+    margin: 0.2rem 0 0.5rem 0;
   }
 
   .enter-festival-btn {
-    padding: 0.45rem 1.1rem;
-    font-size: 0.68rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
   }
 
   .blessing-line {
