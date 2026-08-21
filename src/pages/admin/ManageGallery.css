@@ -132,3 +132,35 @@
   background: rgba(245, 158, 11, 0.15);
   border-color: #f59e0b;
 }
+
+@media (max-width: 768px) {
+  .admin-events-page {
+    padding: 1rem;
+  }
+
+  .admin-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-events-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .admin-form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .admin-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-item-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
