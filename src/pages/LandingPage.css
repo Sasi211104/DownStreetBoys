@@ -46,9 +46,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 3rem;
+  padding: 1rem 3rem;
   z-index: 30;
   position: relative;
+  background: rgba(18, 5, 0, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(230, 177, 92, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 .dsb-brand {
   display: flex;

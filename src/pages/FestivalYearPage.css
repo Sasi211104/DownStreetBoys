@@ -886,3 +886,30 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ================= FESTIVAL PAGE MOBILE NAVBAR FIX ================= */
+@media (max-width: 768px) {
+  /* Ensure the festival page navbar wraps or fits comfortably on smaller screens */
+  .festival-navbar, 
+  .dashboard-navbar, 
+  header {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Make sure branding and titles scale down correctly */
+  .festival-navbar .brand-text h2,
+  .dashboard-navbar h2 {
+    font-size: 0.95rem;
+  }
+
+  /* Adjust navigation action buttons for mobile */
+  .festival-navbar .nav-actions,
+  .dashboard-navbar .nav-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
