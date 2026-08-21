@@ -1,0 +1,134 @@
+.admin-gallery-page {
+  padding: 2rem;
+  background: #140501;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.gallery-admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.drive-link-card {
+  background: linear-gradient(145deg, rgba(35, 12, 4, 0.9), rgba(20, 6, 2, 0.95));
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.card-header-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.drive-icon {
+  font-size: 2.5rem;
+}
+
+.card-header-icon h3 {
+  margin: 0 0 6px 0;
+  font-family: "Cinzel", Georgia, serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.card-header-icon p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.admin-status-msg {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid #f59e0b;
+  color: #fde68a;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.admin-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.admin-field-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f7d088;
+}
+
+.admin-field-group input {
+  padding: 14px 16px;
+  background: #0d0300;
+  border: 1.5px solid rgba(245, 158, 11, 0.3);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.admin-field-group input:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.3);
+}
+
+.input-hint {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+}
+
+.form-action-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.save-drive-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  color: #1a0800;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  transition: all 0.2s ease;
+}
+
+.save-drive-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+}
+
+.test-link-btn {
+  padding: 11px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.test-link-btn:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+}

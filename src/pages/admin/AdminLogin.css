@@ -1,0 +1,182 @@
+/* Page Background with Festival Theme */
+.admin-login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #2e1202 0%, #120500 100%);
+  font-family: 'Cinzel', 'Playfair Display', serif, sans-serif;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Glassmorphism Card */
+.admin-login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(30, 15, 8, 0.75);
+  border: 1px solid rgba(230, 177, 92, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 30px rgba(230, 177, 92, 0.1);
+  text-align: center;
+  color: #fff;
+}
+
+/* Header & Logo */
+.admin-logo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 8px rgba(230, 177, 92, 0.4));
+}
+.admin-ganesh-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 14px rgba(245, 158, 11, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.admin-login-card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.3rem 0;
+  letter-spacing: 1px;
+}
+
+.admin-login-subtitle {
+  font-size: 0.85rem;
+  color: #e6b15c;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* Form Inputs */
+.admin-input-group {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.admin-input-group label {
+  display: block;
+  font-size: 0.8rem;
+  color: #c49a6c;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
+}
+
+.admin-input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(230, 177, 92, 0.25);
+  color: #fff !important;
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: lowercase !important; /* Forces all displayed text to small letters */
+  font-variant: normal !important;
+  transition: all 0.3s ease;
+}
+
+
+.admin-input-group input:focus {
+  border-color: #f59e0b;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+}
+
+.admin-input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main Login Button */
+.admin-login-button {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+  border: 1px solid rgba(230, 177, 92, 0.4);
+  border-radius: 10px;
+  color: #fde68a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(185, 28, 28, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.admin-login-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(220, 38, 38, 0.6);
+}
+
+/* Back to Home Button */
+.back-to-landing-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  background: rgba(230, 177, 92, 0.05);
+  border: 1px dashed rgba(230, 177, 92, 0.4);
+  border-radius: 10px;
+  color: #e6b15c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-to-landing-btn .btn-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.back-to-landing-btn:hover {
+  background: rgba(230, 177, 92, 0.15);
+  border: 1px solid #f59e0b;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
+}
+
+.back-to-landing-btn:hover .btn-arrow {
+  transform: translateX(-4px);
+}
+
+/* Footer Note */
+.admin-login-note {
+  font-size: 0.75rem;
+  color: #8c735c;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .admin-login-page {
+    padding: 1rem;
+  }
+
+  .admin-login-card {
+    padding: 1.8rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 1.5rem;
+  }
+}

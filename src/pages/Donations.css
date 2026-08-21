@@ -1,0 +1,390 @@
+.chanda-section-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* ================= PAYMENT & SUBMISSION CARD ================= */
+.donation-main-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 30px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(25, 7, 2, 0.7));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 26px;
+  padding: 35px;
+  backdrop-filter: blur(14px);
+  margin-bottom: 40px;
+}
+
+.donation-qr-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.qr-badge {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #f7d088;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.qr-image-wrapper {
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.qr-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.upi-id-badge {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px dashed rgba(245, 158, 11, 0.5);
+  padding: 6px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fde68a;
+  font-size: 12px;
+}
+
+.copy-btn {
+  background: #f59e0b;
+  color: #1a0800;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.qr-note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+}
+
+/* ================= DONATION FORM ================= */
+.donation-form-box h3 {
+  margin: 0 0 5px;
+  color: #f8ce70;
+  font-size: 1.4rem;
+}
+
+.donation-form-box p {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  font-family: sans-serif;
+}
+
+.donation-msg-banner {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid #f59e0b;
+  color: #fde68a;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.donation-input-form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.donation-input-form label {
+  font-size: 0.8rem;
+  color: #e5e5e5;
+  font-family: sans-serif;
+}
+
+.donation-input-form input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fff;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.file-upload-input {
+  padding: 8px !important;
+  cursor: pointer;
+}
+
+.submit-donation-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  border-radius: 10px;
+  color: #1a0800;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+.submit-donation-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= TOTAL CHANDA BANNER ================= */
+.chanda-total-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(220, 38, 38, 0.2));
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-bottom: 35px;
+}
+
+.chanda-total-banner .total-icon {
+  font-size: 2.5rem;
+}
+
+.chanda-total-banner span {
+  display: block;
+  font-size: 0.85rem;
+  color: #f7d088;
+}
+
+.chanda-total-banner strong {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+/* ================= TABS ================= */
+.donor-tabs-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e5e5e5;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  border-color: #f59e0b;
+}
+
+/* ================= TABLES ================= */
+.donations-table-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.festive-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.festive-table th {
+  padding: 14px 18px;
+  font-size: 0.85rem;
+  color: #f7d088;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  text-transform: uppercase;
+}
+
+.festive-table td {
+  padding: 14px 18px;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+}
+
+.amount-col {
+  color: #f59e0b !important;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.item-name-highlight {
+  color: #fde68a;
+}
+
+.sponsor-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 850px) {
+  .donation-main-card {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================= FINANCIAL SUMMARY GRID ================= */
+.financial-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.fin-card {
+  padding: 22px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.fin-card:hover {
+  transform: translateY(-3px);
+}
+
+.fin-total-collected {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(25, 7, 2, 0.6));
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.fin-total-spent {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15), rgba(25, 7, 2, 0.6));
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.fin-remaining-balance {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(25, 7, 2, 0.6));
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.fin-card-label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #f7d088;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.fin-val {
+  font-size: 1.9rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.text-gold {
+  color: #f59e0b;
+}
+
+.text-red {
+  color: #f87171;
+}
+
+.text-green {
+  color: #34d399;
+}
+
+.text-negative {
+  color: #ef4444;
+}
+
+.fin-card small {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: sans-serif;
+}
+
+/* Spendings Table Formatting */
+.expense-title-col {
+  color: #ffffff;
+}
+
+.amount-spent-col {
+  color: #f87171 !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.expense-category-pill {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fde68a;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.tfoot-summary-row {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.tfoot-summary-row td {
+  padding: 14px 18px;
+  color: #f7d088 !important;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 850px) {
+  .financial-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

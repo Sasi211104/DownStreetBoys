@@ -1,0 +1,411 @@
+.contact-section-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.sub-section-title {
+  text-align: center;
+  color: #f7d088;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 40px 0 20px 0;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+/* ================= 1. COORDINATOR CARD ================= */
+.coordinator-card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.coordinator-card {
+  position: relative;
+  width: min(650px, 100%);
+  padding: 30px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.18),
+    rgba(25, 7, 2, 0.85)
+  );
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px);
+  text-align: left;
+}
+
+.coordinator-badge {
+  position: absolute;
+  top: -12px;
+  right: 25px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.coordinator-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.person-avatar {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.role-tag {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: #f59e0b;
+  font-weight: 800;
+  display: block;
+}
+
+.coordinator-info h3 {
+  margin: 3px 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.coordinator-info p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+.contact-actions-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 12px;
+}
+
+.btn-call,
+.btn-whatsapp {
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-call {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.3);
+}
+
+.btn-call:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.5);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  background: #20ba59;
+}
+
+/* ================= 2. 4 ORGANIZERS GRID ================= */
+.organizers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.organizer-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 18px;
+  padding: 20px 16px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.organizer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.org-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.org-icon {
+  font-size: 1.4rem;
+}
+
+.org-tag {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #f7d088;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.organizer-card h4 {
+  margin: 0 0 2px 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.org-role-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #c49a6c;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.org-buttons-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.org-call-btn,
+.org-wa-btn {
+  padding: 8px 4px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.org-call-btn {
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+}
+
+.org-call-btn:hover {
+  background: #f59e0b;
+  color: #1a0800;
+}
+
+.org-wa-btn {
+  background: rgba(37, 211, 102, 0.15);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  color: #86efac;
+}
+
+.org-wa-btn:hover {
+  background: #25d366;
+  color: #ffffff;
+}
+
+/* ================= 3. LOCATION & SOCIALS ================= */
+.location-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.contact-info-card {
+  padding: 30px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.08),
+    rgba(25, 7, 2, 0.75)
+  );
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-icon-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.big-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.card-subtext {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #f59e0b;
+  font-weight: 800;
+}
+
+.card-icon-header h3 {
+  margin: 2px 0 0 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.contact-info-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.maps-direction-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.maps-direction-btn:hover {
+  transform: translateY(-2px);
+}
+
+.social-links-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.25s ease;
+}
+
+.social-btn span {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 400 !important; /* Removes bold styling */
+  text-transform: lowercase ; /* Keeps your exact lowercase letters */
+}
+
+.social-btn small {
+  color: #f7d088;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: none !important; /* Keeps email / text lowercase */
+}
+
+
+.social-btn:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  transform: translateX(4px);
+}
+
+
+/* Lord Ganesha Avatar for Coordinator */
+.ganesh-avatar-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.25), rgba(20, 6, 2, 0.8));
+  border: 1.5px solid rgba(245, 158, 11, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  flex-shrink: 0;
+}
+
+.ganesh-avatar-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+}
+
+/* Lord Ganesha Icon for Organizers */
+.org-ganesh-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-ganesh-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .organizers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .location-social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coordinator-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-actions-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .organizers-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,214 @@
+.admin-schedule-page {
+  padding: 2rem;
+  color: #fff;
+  background: #180702;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-year-select {
+  padding: 0.6rem 1rem;
+  background: #2b0e04;
+  color: #f7d088;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.admin-msg-banner {
+  padding: 0.8rem;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #fde68a;
+}
+
+.admin-schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.admin-schedule-form,
+.admin-schedule-list {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+
+.admin-form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.admin-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.admin-form-group label {
+  font-size: 0.85rem;
+  color: #f7d088;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+  padding: 0.65rem;
+  background: #200802;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.admin-form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-save-btn {
+  padding: 0.7rem 1.4rem;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  color: #1a0800;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-cancel-btn {
+  padding: 0.7rem 1.4rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #dedede;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.admin-item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-item-icon {
+  font-size: 1.8rem;
+}
+
+.admin-item-info strong {
+  display: block;
+  color: #fff;
+}
+
+.admin-item-info small {
+  color: #c49a6c;
+}
+
+.admin-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.del-btn {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ================= EMOJI PALETTE & INPUT ================= */
+.emoji-picker-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.emoji-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.emoji-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 5px 9px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.emoji-btn:hover {
+  background: rgba(245, 158, 11, 0.25);
+  border-color: #f59e0b;
+  transform: scale(1.15);
+}
+
+.emoji-btn.active-emoji {
+  background: rgba(245, 158, 11, 0.35);
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.emoji-input-field {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #200802;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fde68a;
+  font-size: 1rem;
+}
+
+/* ================= DATE & TIME PICKERS ================= */
+.date-picker-input,
+.time-picker-input {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .admin-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}

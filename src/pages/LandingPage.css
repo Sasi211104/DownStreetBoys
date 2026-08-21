@@ -1,0 +1,1211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #2e1202 0%, #120500 100%);
+  color: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Cinzel', 'Playfair Display', serif, sans-serif;
+}
+
+/* Background Ambient Glows */
+.landing-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: 1;
+}
+
+.landing-glow-one {
+  top: 10%;
+  left: 20%;
+  width: 300px;
+  height: 300px;
+  background: rgba(230, 177, 92, 0.15);
+}
+
+.landing-glow-two {
+  bottom: 15%;
+  right: 20%;
+  width: 350px;
+  height: 350px;
+  background: rgba(220, 38, 38, 0.1);
+}
+
+/* Navbar */
+.landing-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  z-index: 30;
+  position: relative;
+}
+.dsb-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.dsb-logo img {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.brand-text h2 {
+  font-size: 1.1rem;
+  color: #e6b15c;
+  letter-spacing: 1px;
+}
+
+.brand-text span,
+.brand-text small {
+  display: block;
+  font-size: 0.65rem;
+  color: #c49a6c;
+  letter-spacing: 1.5px;
+}
+
+/* Premium Glassmorphic Sign In Button */
+.sign-in-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: 1px solid #f59e0b;
+  color: #1a0800;
+  padding: 0.5rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  border-color: #ef4444;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.55);
+}
+
+.sign-in-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
+}
+
+/* Hero Section */
+.landing-hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+  margin-top: -10px;
+}
+
+.festival-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Swing Wrapper */
+.swing-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: min(85vw, 540px);
+  animation: gentleSwing 4s ease-in-out infinite;
+}
+
+.ganesh-swing-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.8));
+}
+
+.ganesh-glow {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(230, 177, 92, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Text Positioned In Swing Top Area */
+.swing-inner-content {
+  position: absolute;
+  top: 1.5%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.welcome-tag {
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
+  color: #f7d088;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(230, 177, 92, 0.2);
+}
+
+.hero-subtitle,
+.hero-title span {
+  color: #e6b15c;
+  display: block;
+}
+
+.festival-location {
+  font-size: 0.65rem;
+  color: #c49a6c;
+  letter-spacing: 2px;
+  margin: 0.3rem 0 0.8rem 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.enter-festival-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  border: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  padding: 0.55rem 1.4rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.enter-festival-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.65);
+}
+
+/* Footer Section with Line Above Ganpati Bappa Morya */
+.landing-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 20;
+  padding-bottom: 1.5rem;
+}
+
+.blessing-line {
+  font-size: 0.82rem;
+  color: #dedede;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+.landing-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1rem 0 1rem;
+  color: #a87e50;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  border-top: 1px solid rgba(230, 177, 92, 0.15);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  width: 100%;
+}
+
+.landing-footer span {
+  color: #e6b15c;
+  font-size: 1.2rem;
+}
+
+/* Keyframes */
+@keyframes gentleSwing {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .landing-navbar {
+    padding: 1rem 1.2rem;
+  }
+
+  .dsb-logo img {
+    height: 52px;
+  }
+
+  .brand-text h2 {
+    font-size: 0.85rem;
+  }
+
+  .swing-wrapper {
+    width: 95vw;
+  }
+
+  .swing-inner-content {
+    top: 1%;
+    width: 68%;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
+  }
+
+  .enter-festival-btn {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.68rem;
+  }
+
+  .blessing-line {
+    font-size: 0.72rem;
+    padding: 0 1rem;
+  }
+}
+/* =========================================================
+   YEAR SELECTION OVERLAY
+========================================================= */
+
+.year-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(245, 158, 11, 0.12),
+      transparent 45%
+    ),
+    rgba(10, 3, 0, 0.78);
+
+  backdrop-filter: blur(14px);
+
+  animation: yearOverlayIn 0.3s ease forwards;
+}
+
+
+/* =========================================================
+   YEAR CARD
+========================================================= */
+
+.year-selection-card {
+  position: relative;
+
+  width: min(520px, 100%);
+
+  padding: 42px 35px 32px;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(67, 25, 5, 0.97),
+      rgba(25, 7, 2, 0.98)
+    );
+
+  border: 1px solid rgba(230, 177, 92, 0.35);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(245, 158, 11, 0.12);
+
+  animation: yearCardIn 0.4s ease forwards;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.year-close-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.year-close-btn:hover {
+  background: #d97706;
+
+  color: #fff;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   OM SYMBOL
+========================================================= */
+
+.year-symbol {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  color: #ffd166;
+
+  border: 1px solid rgba(230, 177, 92, 0.4);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(245, 158, 11, 0.2),
+      rgba(245, 158, 11, 0.03)
+    );
+
+  box-shadow:
+    0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+
+/* =========================================================
+   YEAR TEXT
+========================================================= */
+
+.year-small-title {
+  margin: 0 0 7px;
+
+  color: #c49a6c;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  font-weight: 700;
+}
+
+.year-selection-card h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 32px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.year-description {
+  margin: 12px auto 25px;
+
+  max-width: 380px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   YEAR GRID
+========================================================= */
+
+.year-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  max-width: 420px;
+
+  margin: auto;
+}
+
+
+/* =========================================================
+   YEAR BUTTON
+========================================================= */
+
+.year-btn {
+  min-height: 75px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(230, 177, 92, 0.2);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  color: #fff;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.year-btn span {
+  font-size: 20px;
+
+  font-weight: 800;
+
+  color: #f7d088;
+
+  letter-spacing: 1px;
+}
+
+.year-btn small {
+  font-family: sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  color: #f59e0b;
+
+  font-weight: 800;
+}
+
+
+/* Hover */
+
+.year-btn:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(245, 158, 11, 0.7);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(245, 158, 11, 0.2),
+      rgba(217, 119, 6, 0.08)
+    );
+
+  box-shadow:
+    0 12px 30px rgba(245, 158, 11, 0.18);
+}
+
+
+/* Current Year */
+
+.year-btn.current-year {
+  border-color: rgba(245, 158, 11, 0.65);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(245, 158, 11, 0.18),
+      rgba(217, 119, 6, 0.06)
+    );
+}
+
+
+/* =========================================================
+   BOTTOM TEXT
+========================================================= */
+
+.year-bottom-text {
+  margin: 25px 0 0;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-family: sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+/* ================= INSTAGRAM BUTTON STYLES ================= */
+.landing-instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fde68a;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.landing-instagram-btn:hover {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: #f59e0b;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+}
+
+.landing-instagram-btn svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+  .landing-instagram-btn {
+    padding: 8px 10px;
+  }
+
+  .landing-instagram-btn span {
+    display: none;
+  }
+}
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes yearOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes yearCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   MOBILE YEAR SELECTOR
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .year-overlay {
+    padding: 15px;
+  }
+
+  .year-selection-card {
+    padding: 38px 20px 26px;
+
+    border-radius: 24px;
+  }
+
+  .year-symbol {
+    width: 52px;
+    height: 52px;
+
+    font-size: 26px;
+  }
+
+  .year-selection-card h2 {
+    font-size: 27px;
+  }
+
+  .year-description {
+    font-size: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  .year-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .year-btn {
+    min-height: 68px;
+  }
+
+  .year-btn span {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .year-selection-card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .year-grid {
+    gap: 8px;
+  }
+
+  .year-btn {
+    min-height: 62px;
+  }
+
+}
+
+/* =========================================================
+   YEAR SELECTION OVERLAY
+========================================================= */
+
+.year-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(245, 158, 11, 0.12),
+      transparent 45%
+    ),
+    rgba(10, 3, 0, 0.82);
+
+  backdrop-filter: blur(14px);
+
+  animation: yearOverlayIn 0.3s ease forwards;
+}
+
+
+/* =========================================================
+   YEAR CARD
+========================================================= */
+
+.year-selection-card {
+  position: relative;
+
+  width: min(520px, 100%);
+
+  padding: 42px 35px 32px;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(67, 25, 5, 0.97),
+      rgba(25, 7, 2, 0.98)
+    );
+
+  border: 1px solid rgba(230, 177, 92, 0.35);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(245, 158, 11, 0.12);
+
+  animation: yearCardIn 0.4s ease forwards;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.year-close-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.year-close-btn:hover {
+  background: #d97706;
+
+  color: #fff;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   OM SYMBOL
+========================================================= */
+
+.year-symbol {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  color: #ffd166;
+
+  border: 1px solid rgba(230, 177, 92, 0.4);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(245, 158, 11, 0.2),
+      rgba(245, 158, 11, 0.03)
+    );
+
+  box-shadow:
+    0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.year-small-title {
+  margin: 0 0 7px;
+
+  color: #c49a6c;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  font-weight: 700;
+}
+
+.year-selection-card h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 32px;
+
+  font-weight: 800;
+}
+
+.year-description {
+  margin: 12px auto 25px;
+
+  max-width: 380px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   YEAR GRID
+========================================================= */
+
+.year-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+
+  max-width: 420px;
+
+  margin: auto;
+}
+
+
+/* =========================================================
+   YEAR BUTTON
+========================================================= */
+
+.year-btn {
+  min-height: 85px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(230, 177, 92, 0.2);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  color: #fff;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition: all 0.25s ease;
+}
+
+.year-btn span {
+  font-size: 24px;
+
+  font-weight: 800;
+
+  color: #f7d088;
+
+  letter-spacing: 1px;
+}
+
+.year-btn small {
+  font-family: sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  color: #f59e0b;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.year-btn:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(245, 158, 11, 0.7);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(245, 158, 11, 0.2),
+      rgba(217, 119, 6, 0.08)
+    );
+
+  box-shadow:
+    0 12px 30px rgba(245, 158, 11, 0.18);
+}
+
+
+/* =========================================================
+   CURRENT YEAR
+========================================================= */
+
+.year-btn.current-year {
+  border-color: rgba(245, 158, 11, 0.7);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(245, 158, 11, 0.2),
+      rgba(217, 119, 6, 0.08)
+    );
+
+  box-shadow:
+    0 0 25px rgba(245, 158, 11, 0.12);
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.year-loading {
+  padding: 25px;
+
+  color: #f7d088;
+
+  font-family: sans-serif;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.year-error {
+  padding: 20px;
+
+  color: #ffb4a8;
+
+  font-family: sans-serif;
+
+  font-size: 13px;
+}
+
+.year-error p {
+  margin-bottom: 12px;
+}
+
+.year-error button {
+  border: none;
+
+  padding: 9px 18px;
+
+  border-radius: 20px;
+
+  background: #d97706;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.year-bottom-text {
+  margin: 25px 0 0;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-family: sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes yearOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes yearCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .year-overlay {
+    padding: 15px;
+  }
+
+  .year-selection-card {
+    padding: 38px 20px 26px;
+
+    border-radius: 24px;
+  }
+
+  .year-symbol {
+    width: 52px;
+    height: 52px;
+
+    font-size: 26px;
+  }
+
+  .year-selection-card h2 {
+    font-size: 27px;
+  }
+
+  .year-description {
+    font-size: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  .year-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .year-btn {
+    min-height: 68px;
+  }
+
+  .year-btn span {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .year-selection-card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .year-grid {
+    gap: 8px;
+  }
+
+  .year-btn {
+    min-height: 62px;
+  }
+
+}

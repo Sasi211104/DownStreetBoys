@@ -1,0 +1,279 @@
+/* =========================================================
+   POOJA VIDHANAM, MANTRAS & VRATHA KATHA SECTION STYLES
+========================================================= */
+
+.pooja-story-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ================= 4 TABS NAVIGATION ================= */
+.pooja-tabs-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.pooja-tab-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #dedede;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pooja-tab-btn:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.pooja-tab-btn.active {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0800;
+  border-color: #f59e0b;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ================= MAIN CONTENT BOX ================= */
+.pooja-content-box {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.08),
+    rgba(25, 7, 2, 0.85)
+  );
+  border: 1.5px solid rgba(245, 158, 11, 0.32);
+  border-radius: 26px;
+  padding: 38px 30px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(14px);
+}
+
+/* ================= SHLOKA & MANTRA CARDS ================= */
+.shloka-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 18px 18px 0;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+}
+
+.shloka-card:hover {
+  transform: translateX(4px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.shloka-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #f59e0b;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.shloka-sanskrit,
+.shloka-telugu {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.85;
+  color: #fde68a;
+  margin: 6px 0 12px 0;
+}
+
+.shloka-meaning {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+}
+
+.shloka-meaning strong {
+  color: #f7d088;
+}
+
+/* ================= 16-STEP PUJA GRID ================= */
+.sub-section-title {
+  color: #ffffff;
+  font-size: 1.45rem;
+  margin: 0 0 8px 0;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.sub-section-desc {
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 26px;
+  font-size: 0.95rem;
+}
+
+.vidhanam-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.step-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  border-radius: 16px;
+  padding: 20px 18px;
+  transition: all 0.25s ease;
+}
+
+.step-item:hover {
+  transform: translateY(-3px);
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.step-num {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  font-size: 12px;
+  font-weight: 800;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-item h4 {
+  margin: 0 0 6px 0;
+  color: #fde68a;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.step-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+/* ================= VRATHA KATHA STORY ================= */
+.story-box {
+  padding: 40px 32px;
+}
+
+.story-main-heading {
+  color: #f59e0b;
+  font-size: 1.55rem;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  margin: 0 0 24px 0;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+  padding-bottom: 14px;
+}
+
+.story-segment {
+  margin-bottom: 24px;
+}
+
+.story-segment h4 {
+  color: #fde68a;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.story-segment p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.98rem;
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+.story-akshata-mantra {
+  background: radial-gradient(
+    circle at center,
+    rgba(245, 158, 11, 0.18),
+    rgba(35, 10, 2, 0.95)
+  );
+  border: 1.5px dashed rgba(245, 158, 11, 0.6);
+  border-radius: 18px;
+  padding: 24px 20px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.akshata-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #f59e0b;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.story-akshata-mantra p {
+  color: #fde68a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ================= ANIMATION ================= */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .pooja-content-box {
+    padding: 26px 18px;
+  }
+
+  .pooja-tabs-row {
+    gap: 8px;
+  }
+
+  .pooja-tab-btn {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+
+  .shloka-telugu {
+    font-size: 1.05rem;
+  }
+
+  .story-akshata-mantra p {
+    font-size: 1.02rem;
+  }
+}

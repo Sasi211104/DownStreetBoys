@@ -1,0 +1,192 @@
+/* ================= EVENTS SECTION WRAPPER ================= */
+.events-section-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ================= EMPTY STATE CARD ================= */
+.empty-events-card {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(245, 158, 11, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.empty-events-card .empty-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.empty-events-card h3 {
+  color: #f7d088;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.empty-events-card p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ================= EVENTS CARDS GRID ================= */
+.events-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.event-item-card {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.08),
+    rgba(25, 7, 2, 0.75)
+  );
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.event-item-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7);
+}
+
+/* Top Row: Icon + Countdown */
+.event-card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-emoji-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+/* Event Title */
+.event-item-card h3 {
+  margin: 0 0 14px 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  line-height: 1.4;
+}
+
+/* Date and Time Bar */
+.event-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.meta-tag {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fde68a;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Event Description */
+.event-description {
+  color: rgba(255, 255, 255, 0.72);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ================= LIVE COUNTDOWN & STATUS BADGES ================= */
+.countdown-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.upcoming-pill {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fde68a;
+}
+
+.upcoming-pill strong {
+  color: #f59e0b;
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+.completed-pill {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Pulsing Status Dot */
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orange-dot {
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: pulse-glow 1.5s infinite;
+}
+
+.green-dot {
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .events-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

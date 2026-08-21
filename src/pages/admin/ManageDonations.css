@@ -1,0 +1,299 @@
+.admin-donations-page {
+  padding: 2.5rem;
+  color: #fff;
+  background: #180702;
+  min-height: 100vh;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-back-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f7d088;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.admin-year-select {
+  padding: 0.6rem 1rem;
+  background: #2b0e04;
+  color: #f7d088;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.admin-tab-btn {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #dedede;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-tab-btn.active {
+  background: #f59e0b;
+  color: #1a0800;
+}
+
+.warning-tab {
+  border-color: #f59e0b !important;
+  color: #fde68a !important;
+}
+
+.admin-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2rem;
+}
+
+.admin-form-panel,
+.admin-list-panel,
+.admin-full-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: #f7d088;
+}
+
+.form-group input {
+  padding: 0.7rem;
+  background: #200802;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-save-btn {
+  padding: 0.7rem 1.4rem;
+  background: #f59e0b;
+  border: none;
+  color: #1a0800;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-cancel-btn {
+  padding: 0.7rem 1.4rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #dedede;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-table-container {
+  overflow-x: auto;
+}
+
+.admin-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-data-table th {
+  padding: 10px;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f7d088;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.admin-data-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+}
+
+.amount-highlight {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.utr-code {
+  background: #120500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbd38d;
+  font-family: monospace;
+}
+
+.action-approve {
+  background: #10b981;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-right: 6px;
+}
+
+.action-edit {
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.action-del {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-receipt-btn {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  position: relative;
+  background: #1e0902;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.preview-img-wrapper {
+  margin-top: 15px;
+  max-height: 70vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.preview-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 850px) {
+  .admin-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add these mobile adjustments at the bottom of ManageDonations.css */
+@media (max-width: 850px) {
+  .admin-donations-page {
+    padding: 1rem;
+  }
+
+  .admin-grid-layout {
+    grid-template-columns: 1fr; /* Stack form and list panels */
+    gap: 1rem;
+  }
+
+  .admin-tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .admin-tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Make tables horizontally scrollable without breaking the page layout */
+  .admin-table-container,
+  .admin-full-panel {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0.5rem;
+  }
+
+  .admin-data-table {
+    font-size: 0.78rem;
+  }
+
+  .admin-header-row {
+    flex-direction: column;
+    align-items: flex-stretch;
+  }
+}

@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+/* ================= WRAPPER & CONTAINER ================= */
+.schedule-section-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  position: relative;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* ================= EMPTY STATE CARD ================= */
+.empty-schedule-card {
+  text-align: center;
+  padding: 60px 24px;
+  background: radial-gradient(circle at top, rgba(245, 158, 11, 0.08), rgba(20, 6, 2, 0.85));
+  border: 1.5px dashed rgba(245, 158, 11, 0.35);
+  border-radius: 26px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.empty-schedule-card .empty-icon {
+  font-size: 3.2rem;
+  display: inline-block;
+  margin-bottom: 14px;
+  filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.4));
+}
+
+.empty-schedule-card h3 {
+  color: #fde68a;
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+  font-family: "Cinzel", Georgia, serif;
+  letter-spacing: 0.5px;
+}
+
+.empty-schedule-card p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ================= 3-CARDS VERTICAL GRID ================= */
+.schedule-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ================= SACRED CARD ================= */
+.schedule-item-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(35, 12, 4, 0.85) 0%,
+    rgba(18, 5, 1, 0.92) 100%
+  );
+  border: 1.5px solid rgba(245, 158, 11, 0.28);
+  border-radius: 24px;
+  padding: 30px 34px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.schedule-item-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #f59e0b, #d97706, #ef4444);
+  border-radius: 4px 0 0 4px;
+  opacity: 0.8;
+}
+
+.schedule-item-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.65);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75), 0 0 30px rgba(245, 158, 11, 0.18);
+  background: linear-gradient(
+    135deg,
+    rgba(45, 15, 5, 0.9) 0%,
+    rgba(22, 6, 2, 0.96) 100%
+  );
+}
+
+/* Top Row (Badge + Live Pill) */
+.schedule-card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.day-tag {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ================= COUNTDOWN & STATUS BADGES ================= */
+.countdown-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.upcoming-pill {
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fde68a;
+}
+
+.upcoming-pill strong {
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.completed-pill {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.daily-pill {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(217, 119, 6, 0.1));
+  border: 1px solid #f59e0b !important;
+  color: #fde68a !important;
+}
+
+/* Pulsing Dots */
+.pill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orange-dot {
+  background: #f59e0b;
+  box-shadow: 0 0 10px #f59e0b;
+  animation: schedule-pulse 1.6s infinite;
+}
+
+.green-dot {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+@keyframes schedule-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.35);
+  }
+}
+
+/* ================= TITLE & ICON ROW ================= */
+.ritual-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ritual-icon-container {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.25), rgba(30, 8, 2, 0.8));
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.2);
+  flex-shrink: 0;
+}
+
+.ritual-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.ritual-title-wrapper h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.3px;
+}
+
+/* ================= META PILLS BAR ================= */
+.schedule-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.meta-tag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(8px);
+}
+
+.highlight-time {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fde68a;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.15);
+}
+
+.highlight-time strong {
+  color: #ffffff;
+}
+
+/* ================= DESCRIPTION ================= */
+.schedule-description {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 12px 18px;
+  border-radius: 12px;
+  border-left: 2px solid rgba(245, 158, 11, 0.5);
+}
+
+/* ================= RESPONSIVE ADJUSTMENTS ================= */
+@media (max-width: 768px) {
+  .schedule-item-card {
+    padding: 22px 20px;
+    border-radius: 20px;
+  }
+
+  .schedule-card-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ritual-title-wrapper h3 {
+    font-size: 1.25rem;
+  }
+
+  .ritual-icon-container {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ritual-icon {
+    font-size: 1.5rem;
+  }
+}
