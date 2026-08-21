@@ -388,3 +388,73 @@
     grid-template-columns: 1fr;
   }
 }
+/* ================= MOBILE OPTIMIZATIONS ================= */
+@media (max-width: 768px) {
+  .chanda-section-wrapper {
+    padding: 0 12px;
+  }
+
+  /* Stack form inputs vertically on phones */
+  .input-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* Make total banner stack nicely on smaller screens */
+  .chanda-total-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px;
+    gap: 10px;
+  }
+
+  .chanda-total-banner strong {
+    font-size: 1.8rem;
+  }
+
+  /* Make donor tabs stack vertically or scroll easily */
+  .donor-tabs-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Financial summary cards spacing on mobile */
+  .fin-card {
+    padding: 16px;
+  }
+
+  .fin-val {
+    font-size: 1.5rem;
+  }
+
+  /* Ensure tables scale and scroll smoothly without breaking page bounds */
+  .donations-table-wrapper {
+    padding: 5px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .festive-table th,
+  .festive-table td {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-main-card {
+    padding: 20px 14px;
+    border-radius: 18px;
+  }
+
+  .qr-image-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+}
