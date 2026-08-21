@@ -118,8 +118,7 @@
   align-items: flex-start;
   position: relative;
   z-index: 10;
-  margin-top: 2rem; /* Pushes the entire swing and text content lower down */
-  margin-bottom: 2rem;
+  margin-top: -10px;
 }
 
 .festival-container {
@@ -159,7 +158,7 @@
 /* Text Positioned In Swing Top Area */
 .swing-inner-content {
   position: absolute;
-  top: 1.5%;
+  top: 3%;
   width: 60%;
   display: flex;
   flex-direction: column;
